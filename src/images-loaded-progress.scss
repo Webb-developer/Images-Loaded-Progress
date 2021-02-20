@@ -1,0 +1,75 @@
+/*
+Recommended CSS.
+*/
+
+@keyframes colorRotate{
+
+    0%{
+        background-color: #78c5d6;
+    }
+
+    25%{
+        background-color: #79c267;
+    }
+
+    50%{
+        background-color: #f5d63d;
+    }
+
+    75%{
+        background-color: #f28c33;
+    }
+
+    90%{
+        background-color: #78c5d6;
+    }
+
+}
+
+// Progress bar.
+.images-loaded-progress-bar{
+    animation: colorRotate 15s infinite;
+    transition: opacity 0.5s ease, width 0.5s ease;
+    position: fixed;
+    top:  0;
+    left: 0;
+    width: 0;
+    will-change: width, opacity;
+    padding: 6px 0;
+    z-index: 9999;
+    color: #000;
+    background-color: #78c5d6;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: large;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -webkit-font-smoothing: antialiased;
+    pointer-events: none;
+}
+
+.images-loaded-progress-bar--done{
+    opacity: 0;
+}
+
+// Base image classes.
+.images-loaded--invisible,
+.images-loaded--visible{
+    transition: opacity 0.5s ease;
+    will-change: opacity;
+}
+
+
+// Invisible image class.
+.images-loaded--invisible{
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+// Visible image class.
+.images-loaded--visible{
+    opacity: 1;
+    pointer-events: auto;
+}
