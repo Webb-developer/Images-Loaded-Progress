@@ -179,7 +179,9 @@ var ImagesLoadedProgress = function(window, document, undefined){
                 // If it's at the max, add the progress bar done class.
                 if(Math.round(value) === 100){
                     data.selectors.progress.classList.add(data.classes.progressBarDoneClass);
-                    _cb();
+                    if(typeof(cb) === "function"){
+                        _cb();
+                    }
                 }
 
             });
