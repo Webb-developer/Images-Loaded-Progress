@@ -1,1 +1,2 @@
-This project is old and long retired. Feel free to look at the code and [check out the demo](https://images-loaded-progress.vercel.app/)
+### Images Loaded Progress is old and retired.
+You can still [check out the demo](https://images-loaded-progress.vercel.app/).
